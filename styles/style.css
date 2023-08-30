@@ -16,10 +16,12 @@ body {
     gap: 16vh;
     padding: 3vh;
     padding-top: 6vh;
-    background-color: #0369a1;
+    background-color: #6b7280;
     color: #082f49;
     font-weight: 600;
     font-size: 5vh;
+    box-shadow: 3px 0px 17px -1px rgba(34, 60, 80, 0.32);
+    z-index: 1;
 }
 
 .list-element {
@@ -51,12 +53,62 @@ body {
     display: grid;
     grid-template-rows: 1fr 3fr;
     height: 100%;
+    background-color: #e2e8f0;
 }
 
 #header {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-row: 1;
+    background-color: #f0f9ff;
+    box-shadow: 0px 6px 9px 0px rgba(34, 60, 80, 0.1);
+    padding-left: 4vh;
+    padding-right: 4vh;
+    padding-bottom: 2vh;
+}
+
+#search-input {
+    width: 59vw;
+    font-size: 3vh;
+    height: 5vh;
+    border-radius: 30px;
+    border: none;
+    background-color: #e2e8f0;
+    padding: 20px;
+}
+
+#user-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#notifiction-logo-img {
+    margin-right: 1vw;
+    height: 5vh;
+}
+
+#user-avatar-img {
+    border-radius: 100px;
+    margin-right: 1vw;
+    height: 8vh;
+}
+
+#user-avatar-img2 {
+    border-radius: 100px;
+    margin-right: 1vw;
+    height: 11vh;
+}
+
+#user-name {
+    text-decoration: none;
+    color: #082f49;
+    font-size: 4vh;
+    font-weight: 700;
+}
+
+.high-header {
+    margin-bottom: 1vh;
 }
 
 .high-header,
@@ -68,10 +120,37 @@ body {
 
 #user-greating {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#user-name-text {
-    display: inline;
+#bottom-header-avatar-text {
+    font-size: 2vh;
+}
+
+#header-buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-button {
+    font-size: 2.5vh;
+    padding: 1vh 3vw;
+    border: none;
+    border-radius: 20px;
+    margin-right: 1vw;
+    color: #082f49;
+    font-weight: 600;
+    background-color: #ffc83b;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 250ms;
+}
+
+.header-button:hover {
+    font-size: 2.9vh;
+    color: #e0f2fe;
+    background-color: #075985;
 }
 
 #main {
